@@ -15,5 +15,5 @@ router
             res.send(e)
         }
     })
-
+    .patch('/user/:id')
 module.exports = router
