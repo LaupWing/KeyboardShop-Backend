@@ -6,6 +6,10 @@ const Product =  mongoose.model('Product',{
         requird: true,
         trim:true
     },
+    price:{
+        type: Number,
+        required: true
+    },  
     description:{
         type: String,
         requird: true,
@@ -20,11 +24,14 @@ const Product =  mongoose.model('Product',{
         type:Array,
         required: true,
     },
-    type:{
+    category:{
         type: String,
         required: true,
         trim: true
     },
+    subCategory:{
+        type: String,
+    },  
     options:{
         type: Array
     }
