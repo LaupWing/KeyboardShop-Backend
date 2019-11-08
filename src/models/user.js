@@ -27,6 +27,11 @@ const User =  mongoose.model('User',{
                 throw new Error('Bleep you must enter a valid email bl33p')
             }
         }
+    },
+    password:{
+        type:String,
+        required: true,
+        minlength: 7,
     }
 })
 
